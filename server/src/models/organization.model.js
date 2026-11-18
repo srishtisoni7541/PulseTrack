@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 
 const organizationSchema = new mongoose.Schema(
@@ -58,12 +57,9 @@ const organizationSchema = new mongoose.Schema(
   {
     timestamps: true,
     versionKey: false,
-  }
+  },
 );
 
-const Organization = mongoose.model(
-  "Organization",
-  organizationSchema
-);
+const Organization = mongoose.model("Organization", organizationSchema);
 
 export default Organization;
